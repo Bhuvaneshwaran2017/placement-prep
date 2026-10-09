@@ -193,7 +193,7 @@ print(f"Product : {product_Name}")
 print(f"Price   : ₹{price:.2f}")
 print(f"Quantity: {quantity}")
 print(f"Total   : ₹{total:.2f}")
-"""
+
 
 #====================================
 #challenge - 9
@@ -207,3 +207,89 @@ print(f"Name\t: {Name}")
 print(f"Age\t: {Age}")
 print(f"College\t: {College}")
 print(f"CGPA\t: {CGPA}")
+"""
+
+#====================================
+#challenge - 10
+#====================================
+"""
+age = int(input("Enter your age: "))
+has_license = input("Do you have a license? ")
+
+if age >= 18 and has_license == "yes":
+    print("You are eligible for a driver's license.")
+elif age >= 18 and has_license == "no":
+    print("You are not eligible for a driver's license.")
+else:
+    print("you are not eligible for a driver's license.")
+"""   
+"""
+#====================================
+#challenge - 11
+#====================================
+from ast import And
+
+
+cgpa = float(input("Enter your CGPA: "))
+backlogs = 0 
+
+if cgpa >= 7.0 and backlogs == 0:
+    print("You are eligible for placement.")
+else:
+    print("You are not eligible for placement.")
+"""
+
+#====================================
+#challenge - 12
+#====================================
+"""
+cgpa = float(input("Enter your CGPA: "))
+family_income = float(input("Enter your family income: "))
+
+if cgpa >= 9.0:
+    print("You are eligible for a scholarship.")
+elif cgpa >= 8.5 and family_income < 500000:
+    print("You are eligible for a scholarship.")
+else:
+    print("You are not eligible for a scholarship.")
+"""
+
+#====================================
+#challenge - 13
+#====================================
+"""
+day = input("Enter the day: ")
+
+if day == "Saturday" or day == "Sunday":
+    print("It is a weekend.")
+elif day == "Monday" or day == "Tuesday" or day == "Wednesday" or day == "Thursday" or day == "Friday":
+    print("It is a weekday.")
+else: 
+    print("It is not a weekday.")
+"""
+
+#====================================    
+#challenge - 14
+#====================================
+"ATM SECURITY"
+"""
+balance = 10000
+correct_pin = 1234
+
+pin = int(input("Enter your pin: "))
+
+if pin == correct_pin:
+    amount = int(input("Enter the amount to withdraw: "))
+
+    if amount > 0 and amount <= balance:
+        print("Withdrawal successful.")
+    else:
+        print("Invalid amount.")
+else:
+    print("Invalid pin.")
+"""
+
+#====================================
+#ATM SIMULATOR V1
+#====================================
+

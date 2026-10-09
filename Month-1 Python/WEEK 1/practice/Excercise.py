@@ -1,46 +1,52 @@
-#1
-age = int(input("Enter your age: "))
+#Session 4
+#Match-Case
+"""
+choice = int(input("Enter your choice: "))
 
-if age >= 18:
-    print("You are Eligible to vote")
-else:
-    print("You are not eligible to vote")
+match choice:
+    case 1:
+        print("Deposit")
+    case 2:
+        print("Withdraw")
+    case 3:
+        print("Check Balance")
+    case 4:
+        print("Exit")
+    case _:
+        print("Invalid choice")
+"""
+"""
+command = input("Enter your command: ").lower()
 
-#2
-num = int(input("Enter a number: "))
+match command:
+    case "start":
+        print("Starting...")
+    case "stop":
+        print("Stopping...")
+    case "pause":
+        print("Pausing...")
+    case "resume":
+        print("Resuming...")
+    case _:
+        print("Invalid command")
+"""
 
-if num > 0:
-    print("The number is positive")
-elif num < 0:
-    print("The number is negative")
-else:
-    print("The number is zero")
+choice = input("1. Addiditon \n2. Subtraction \n3. Multiplication \n4. Division \nEnter your choice: ").lower()
 
-#3
-marks = int(input("Enter your marks: "))
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
 
-if marks >= 90:
-    print("Distinction")
-elif marks >= 80:
-    print("First Class")
-elif marks >= 70:
-    print("Pass")   
-else: 
-    print("Fail")
-
-#4
-salary = int(input("Enter your salary: "))
-
-if salary >= 50000:
-    print("High income")
-else:   
-    print("Normal income")
-
-#5
-username = input("Enter your username: ")
-
-if username == "admin":
-    print("Access granted")
-else:
-    print("Access denied")
-
+match choice:
+    case 1:
+        print(num1 + num2)
+    case 2:
+        print(num1 - num2)
+    case 3:
+        print(num1 * num2)
+    case 4:
+        if num2 == 0:
+            print("Error: Division by zero is not allowed.")
+        else:
+            print(num1 / num2)
+    case _:
+        print("Invalid choice")
