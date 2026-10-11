@@ -290,6 +290,31 @@ else:
 """
 
 #====================================
-#ATM SIMULATOR V1
+#challenge - 15 => Right Angle Triangle
 #====================================
+"""
+for i in range (1,6):
+    for j in range (i):
+        print("*", end=" ")
+    print()
+"""
 
+#====================================
+#challenge - 16 => Number Triangle
+#====================================
+"""
+for i in range (1,6):
+    for j in range (1, i+1):
+        print(j, end=" ")
+    print()
+"""
+
+#====================================
+#challenge - 17 => Square
+#====================================
+"""
+for i in range (1,6):
+    print(" ", end="")
+    for j in range (1, i+1):
+        print("*", end="")
+    print()
